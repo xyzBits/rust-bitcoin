@@ -41,6 +41,7 @@
 #![deny(unused_mut)]
 #![deny(missing_docs)]
 
+/// the extern keyword is used to link to external code, typically written in another language such as C or C++
 extern crate bitcoin_bech32;
 extern crate byteorder;
 extern crate crypto;

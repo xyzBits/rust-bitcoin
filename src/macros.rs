@@ -16,6 +16,7 @@
 //!
 //! Macros available to users of the Bitcoin library
 
+/// macro documentation
 #[macro_export]
 macro_rules! nu_select {
     ($($name:pat = $rx:expr => $code:expr),+) => ({
@@ -81,6 +82,7 @@ macro_rules! nu_select {
     })
 }
 
+/// macro documentation
 #[macro_export]
 macro_rules! user_enum {
     ($(#[$attr:meta])* pub enum $name:ident { $(#[$doc:meta] $elem:ident <-> $txt:expr),* }) => (

@@ -44,6 +44,7 @@ pub struct BlockHeader {
     pub time: u32,
     /// The target value below which the blockhash must lie, encoded as a
     /// a float (with well-defined rounding, of course)
+    /// block hash <= bits  in form of decimal
     pub bits: u32,
     /// The nonce, selected to obtain a low enough blockhash
     pub nonce: u32,
@@ -194,6 +195,13 @@ mod tests {
         // [test] TODO: check the transaction data
 
         assert_eq!(serialize(&real_decode).ok(), Some(segwit_block));
+    }
+    /// This is a compiler directive that Rust compiler to give an error if any
+    /// functions or methods in the code do not have documentation comments.
+    #[test]
+    fn test_block_hash() {
+        let block_hash = "000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f";
+
     }
 }
 

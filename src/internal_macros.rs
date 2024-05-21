@@ -285,7 +285,7 @@ macro_rules! hex_hash (($s:expr) => (::util::hash::Sha256dHash::from(&$s.from_he
 
 // Macros to replace serde's codegen while that is not stable
 // Taken from rust-jsonrpc 8a50735712cb7870990314cc150ab9c2955dbfd5
-
+/// macro documentation
 #[macro_export]
 macro_rules! __rust_jsonrpc_internal__define_anything_type {
     () => (
@@ -329,6 +329,7 @@ macro_rules! __rust_jsonrpc_internal__define_anything_type {
     )
 }
 
+/// macro documentation
 #[macro_export]
 macro_rules! serde_struct_impl {
     ($name:ident, $($fe:ident $(<- $alt:expr)*),*) => (
@@ -446,6 +447,8 @@ macro_rules! serde_struct_impl {
     )
 }
 
+/// error: missing documentation for a macro
+/// macro documentation
 #[macro_export]
 macro_rules! serde_struct_enum_impl {
     ($name:ident,
