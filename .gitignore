@@ -18,3 +18,4 @@ bitcoin/dep_test
 # Fuzz artifacts
 hfuzz_target
 hfuzz_workspace
+.idea
